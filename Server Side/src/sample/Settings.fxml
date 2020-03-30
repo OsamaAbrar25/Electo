@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="419.0" prefWidth="607.0" styleClass="backpane" stylesheets="@beautify.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Settings">
+   <children>
+      <Label layoutX="262.0" layoutY="23.0" text="Setting">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="142.0" text="Waiting time :" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <ChoiceBox fx:id="waitingtime" accessibleRole="CHECK_MENU_ITEM" layoutX="194.0" layoutY="137.0" prefWidth="150.0" AnchorPane.bottomAnchor="257.0">
+       <items>
+           <FXCollections fx:factory="observableArrayList">
+               <String fx:id="fivee" fx:value="    5    " />
+               <String fx:id="ten" fx:value="    10    " />
+               <String fx:id="fifteen" fx:value="    15    " />
+           </FXCollections>
+       </items>
+       </ChoiceBox>
+      <Label layoutX="43.0" layoutY="184.0" text="Change Background :" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="filechooser" layoutX="197.0" layoutY="181.0" mnemonicParsing="false" onAction="#setBackground" text="Choose File..." />
+      <Label layoutX="44.0" layoutY="222.0" text="Change Password Hint :" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="257.0" text="Change Password :" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="hint" layoutX="362.0" layoutY="217.0" promptText="Change the password hint">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Button layoutX="497.0" layoutY="361.0" mnemonicParsing="false" onAction="#save_settings" text="Save Setting" />
+      <Label layoutX="45.0" layoutY="109.0" text="No. of Candidates :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="candidates" layoutX="193.0" layoutY="105.0" prefWidth="150.0">
+      	 <items>
+      		<FXCollections fx:factory="observableArrayList">
+      			<String fx:id="two" fx:value="    2    " />
+                <String fx:id="three" fx:value="    3    " />
+                <String fx:id="four" fx:value="    4    " />
+                <String fx:id="five" fx:value="    5    " />
+                <String fx:id="six" fx:value="    6    " />
+      		</FXCollections>
+      	</items> 
+      </ChoiceBox>
+       <Label layoutX="44.0" layoutY="73.0" text="Name &amp; no. of the posts :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="error" layoutX="185.0" layoutY="360.0" text=" " textFill="#bc1111">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="oldph" layoutX="195.0" layoutY="217.0" promptText="Enter the old Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="cnewp" layoutX="361.0" layoutY="292.0" promptText="Confirm the new Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="oldp" layoutX="194.0" layoutY="254.0" promptText="Enter the old Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="newp" layoutX="194.0" layoutY="292.0" promptText="Enter the new Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></PasswordField>
+      <MenuButton fx:id="mb" layoutX="194.0" layoutY="69.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0">
+      </MenuButton>
+      <Hyperlink layoutX="354.0" layoutY="68.0" onAction="#editPosts" text="Edit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="44.0" layoutY="327.0" text="Categories  Names :" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="194.0" layoutY="325.0" onAction="#category" text="Edit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="45.0" layoutY="352.0" text="Erase vote :" textFill="#1e1e1e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="d1" disable="true" layoutX="197.0" layoutY="349.0" mnemonicParsing="false" onAction="#eraseVote" text="Post 1" />
+      <Button fx:id="d2" disable="true" layoutX="262.0" layoutY="349.0" mnemonicParsing="false" onAction="#eraseVote" text="Post 2" />
+      <Button fx:id="d3" disable="true" layoutX="327.0" layoutY="349.0" mnemonicParsing="false" onAction="#eraseVote" text="Post 3" />
+      <Button fx:id="d4" disable="true" layoutX="393.0" layoutY="349.0" mnemonicParsing="false" onAction="#eraseVote" text="Post 4" />
+   </children>
+</AnchorPane>

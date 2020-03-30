@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="pane" prefHeight="565.0" prefWidth="964.0" styleClass="backpane" stylesheets="@beautify.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Post4">
+    <children>
+        <VBox prefHeight="544.0" prefWidth="299.0" styleClass="loginform" stylesheets="@beautify.css" HBox.hgrow="ALWAYS">
+            <children>
+                <Region prefHeight="18.0" prefWidth="299.0" VBox.vgrow="ALWAYS" />
+                <HBox prefHeight="65.0" prefWidth="299.0">
+                    <children>
+                        <Region prefHeight="52.0" prefWidth="3.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#aboutus" prefHeight="50.0" prefWidth="50.0" styleClass="aboutus" />
+                        <Region prefHeight="54.0" prefWidth="20.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="review" />
+                        <Region prefHeight="54.0" prefWidth="20.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#openSetting" prefHeight="50.0" prefWidth="50.0" styleClass="settings" />
+                        <Region prefHeight="54.0" prefWidth="20.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="50.0" styleClass="logout" />
+                        <Region prefHeight="52.0" prefWidth="9.0" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="64.0" prefWidth="299.0">
+                    <children>
+                        <Region prefHeight="41.0" prefWidth="120.0" HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#back" prefHeight="41.0" prefWidth="61.0" styleClass="back" />
+                        <Region prefHeight="41.0" prefWidth="130.0" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <Region prefHeight="141.0" prefWidth="299.0" VBox.vgrow="ALWAYS" />
+                <HBox>
+                    <children>
+                        <Region prefHeight="35.0" prefWidth="35.0" HBox.hgrow="ALWAYS" />
+                        <Label prefHeight="35.0" prefWidth="257.0" text="Administrator Window:" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                        <Region prefHeight="35.0" prefWidth="35.0" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Region prefHeight="59.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                        <Label prefHeight="59.0" prefWidth="299.0" text=" Nominees' details">
+                            <font>
+                                <Font name="System Bold Italic" size="32.0" />
+                            </font>
+                        </Label>
+                        <Region prefHeight="59.0" prefWidth="12.0" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <Region prefHeight="37.0" prefWidth="299.0" VBox.vgrow="ALWAYS" />
+                <Region prefHeight="148.0" prefWidth="299.0" VBox.vgrow="ALWAYS" />
+                <Region prefHeight="10.0" prefWidth="299.0" VBox.vgrow="ALWAYS" />
+                <Label text="ELECTO">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </Label>
+                <Label text="Vr. 1.0">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </Label>
+                <Label text="Developed by:-">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </Label>
+                <Label text="Dujana Abrar">
+                    <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <Region prefHeight="562.0" prefWidth="17.0" HBox.hgrow="ALWAYS" />
+        <VBox prefHeight="562.0" prefWidth="635.0">
+            <children>
+                <Region prefHeight="91.0" prefWidth="635.0" VBox.vgrow="ALWAYS" />
+                <HBox prefHeight="90.0" prefWidth="635.0">
+                    <children>
+                        <Region prefHeight="39.0" prefWidth="205.0" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="postlabel" prefHeight="39.0" prefWidth="323.0">
+                            <font>
+                                <Font name="System Bold" size="27.0" />
+                            </font>
+                        </Label>
+                        <Region prefHeight="0.0" prefWidth="181.0" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <ScrollPane fx:id="scroll" prefHeight="310.0" prefWidth="635.0" stylesheets="@beautify.css">
+                    <content>
+                        <VBox prefHeight="449.0" prefWidth="635.0">
+                            <children>
+                                <Region prefHeight="128.0" prefWidth="253.0" VBox.vgrow="ALWAYS" />
+                                <Region prefHeight="119.0" prefWidth="705.0" />
+                                <HBox>
+                                    <children>
+                                        <Region prefHeight="39.0" prefWidth="249.0" HBox.hgrow="ALWAYS" />
+                                        <Region prefHeight="39.0" prefWidth="235.0" HBox.hgrow="ALWAYS" />
+                                    </children>
+                                </HBox>
+                                <Region prefHeight="229.0" prefWidth="635.0" />
+                                <HBox prefHeight="340.0" prefWidth="715.0">
+                                    <children>
+                                        <Region prefHeight="117.0" prefWidth="20.0" HBox.hgrow="ALWAYS" />
+                                        <VBox fx:id="v1" disable="true" opacity="0.0" prefHeight="132.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Person 1" />
+                                                <TextField fx:id="Name1" prefHeight="25.0" prefWidth="299.0" promptText="Enter the name of the nominee" styleClass="input" />
+                                                <Region prefHeight="0.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+                                                <HBox>
+                                                    <children>
+                                                        <TextField fx:id="Class1" promptText="Enter the class.." styleClass="input" />
+                                                        <Region prefHeight="25.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                                        <TextField fx:id="Sec1" promptText="Enter the section.." styleClass="input" />
+                                                    </children>
+                                                </HBox>
+                                                <Region prefHeight="8.0" prefWidth="326.0" VBox.vgrow="ALWAYS" />
+                                                <Button fx:id="filechooser1" mnemonicParsing="false" onAction="#file_chooser" text="Choose file....." />
+                                            </children>
+                                        </VBox>
+                                        <Region prefHeight="132.0" prefWidth="50.0" HBox.hgrow="ALWAYS" />
+                                        <VBox fx:id="v2" disable="true" opacity="0.0" prefHeight="132.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Person 2" />
+                                                <TextField fx:id="Name2" promptText="Enter the name of the nominee" styleClass="input" />
+                                                <Region prefHeight="0.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+                                                <HBox>
+                                                    <children>
+                                                        <TextField fx:id="Class2" promptText="Enter the class.." styleClass="input" />
+                                                        <Region prefHeight="8.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                                        <TextField fx:id="Sec2" promptText="Enter the section.." styleClass="input" />
+                                                    </children>
+                                                </HBox>
+                                                <Region prefHeight="6.0" prefWidth="354.0" VBox.vgrow="ALWAYS" />
+                                                <Button fx:id="filechooser2" mnemonicParsing="false" onAction="#file_chooser" text="Choose file....." />
+                                            </children>
+                                        </VBox>
+                                        <Region prefHeight="130.0" prefWidth="45.0" HBox.hgrow="ALWAYS" />
+                                    </children>
+                                </HBox>
+                                <Region prefHeight="220.0" prefWidth="715.0" VBox.vgrow="ALWAYS" />
+                                <HBox prefHeight="340.0" prefWidth="715.0">
+                                    <children>
+                                        <Region prefHeight="117.0" prefWidth="20.0" HBox.hgrow="ALWAYS" />
+                                        <VBox fx:id="v3" disable="true" opacity="0.0" prefHeight="133.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Person  3" />
+                                                <TextField fx:id="Name3" prefHeight="25.0" prefWidth="41.0" promptText="Enter the name of the nominee" styleClass="input" />
+                                                <Region prefHeight="0.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+                                                <HBox>
+                                                    <children>
+                                                        <TextField fx:id="Class3" promptText="Enter the class.." styleClass="input" />
+                                                        <Region prefHeight="8.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                                        <TextField fx:id="Sec3" promptText="Enter the section.." styleClass="input" />
+                                                    </children>
+                                                </HBox>
+                                                <Region prefHeight="6.0" prefWidth="331.0" VBox.vgrow="ALWAYS" />
+                                                <Button fx:id="filechooser3" mnemonicParsing="false" onAction="#file_chooser" text="Choose file....." />
+                                            </children>
+                                        </VBox>
+                                        <Region prefHeight="133.0" prefWidth="50.0" HBox.hgrow="ALWAYS" />
+                                        <VBox fx:id="v4" disable="true" opacity="0.0" prefHeight="133.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Person 4" />
+                                                <TextField fx:id="Name4" layoutX="10.0" layoutY="325.0" promptText="Enter the name of the nominee" styleClass="input" />
+                                                <Region prefHeight="0.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+                                                <HBox>
+                                                    <children>
+                                                        <TextField fx:id="Class4" promptText="Enter the class.." styleClass="input" />
+                                                        <Region prefHeight="8.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                                        <TextField fx:id="Sec4" promptText="Enter the section.." styleClass="input" />
+                                                    </children>
+                                                </HBox>
+                                                <Region prefHeight="6.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+                                                <Button fx:id="filechooser4" mnemonicParsing="false" onAction="#file_chooser" text="Choose file....." />
+                                            </children>
+                                        </VBox>
+                                        <Region prefHeight="131.0" prefWidth="44.0" HBox.hgrow="ALWAYS" />
+                                    </children>
+                                </HBox>
+                                <Region prefHeight="200.0" prefWidth="200.0" />
+                                <Region prefHeight="200.0" prefWidth="270.0" VBox.vgrow="ALWAYS" />
+                                <HBox layoutX="10.0" layoutY="247.0" prefHeight="340.0" prefWidth="715.0">
+                                    <children>
+                                        <Region prefHeight="117.0" prefWidth="20.0" HBox.hgrow="ALWAYS" />
+                                        <VBox fx:id="v5" disable="true" opacity="0.0" prefHeight="133.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Person  5" />
+                                                <TextField fx:id="Name5" prefHeight="25.0" prefWidth="41.0" promptText="Enter the name of the nominee" styleClass="input" />
+                                                <Region prefHeight="0.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+                                                <HBox>
+                                                    <children>
+                                                        <TextField fx:id="Class5" promptText="Enter the class.." styleClass="input" />
+                                                        <Region prefHeight="8.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                                        <TextField fx:id="Sec5" promptText="Enter the section.." styleClass="input" />
+                                                    </children>
+                                                </HBox>
+                                                <Region prefHeight="6.0" prefWidth="331.0" VBox.vgrow="ALWAYS" />
+                                                <Button fx:id="filechooser5" mnemonicParsing="false" onAction="#file_chooser" text="Choose file....." />
+                                            </children>
+                                        </VBox>
+                                        <Region prefHeight="133.0" prefWidth="50.0" HBox.hgrow="ALWAYS" />
+                                        <VBox fx:id="v6" disable="true" opacity="0.0" prefHeight="133.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Person 6" />
+                                                <TextField fx:id="Name6" layoutX="10.0" layoutY="325.0" promptText="Enter the name of the nominee" styleClass="input" />
+                                                <Region prefHeight="0.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+                                                <HBox>
+                                                    <children>
+                                                        <TextField fx:id="Class6" promptText="Enter the class.." styleClass="input" />
+                                                        <Region prefHeight="8.0" prefWidth="30.0" HBox.hgrow="ALWAYS" />
+                                                        <TextField fx:id="Sec6" promptText="Enter the section.." styleClass="input" />
+                                                    </children>
+                                                </HBox>
+                                                <Region prefHeight="6.0" prefWidth="300.0" VBox.vgrow="ALWAYS" />
+                                                <Button fx:id="filechooser6" mnemonicParsing="false" onAction="#file_chooser" text="Choose file....." />
+                                            </children>
+                                        </VBox>
+                                        <Region prefHeight="131.0" prefWidth="44.0" HBox.hgrow="ALWAYS" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+                <Region prefHeight="108.0" prefWidth="635.0" />
+                <HBox>
+                    <children>
+                        <Label fx:id="warning" prefHeight="17.0" prefWidth="399.0" textFill="#dd0000">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Region prefHeight="23.0" prefWidth="127.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#insertdata" prefHeight="25.0" prefWidth="80.0" text="Save" />
+                        <Region prefHeight="23.0" prefWidth="31.0" />
+                    </children>
+                </HBox>
+                <Region prefHeight="16.0" prefWidth="635.0" />
+                <Region prefHeight="1.0" prefWidth="635.0" VBox.vgrow="ALWAYS" />
+                <HBox prefHeight="0.0" prefWidth="705.0">
+                    <children>
+                        <Region prefHeight="25.0" prefWidth="512.0" />
+                        <Region maxWidth="-Infinity" prefHeight="25.0" prefWidth="49.0">
+                            <padding>
+                                <Insets right="10.0" />
+                            </padding>
+                        </Region>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Region prefHeight="562.0" prefWidth="13.0" HBox.hgrow="ALWAYS" />
+    </children>
+</HBox>

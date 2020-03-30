@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="183.0" prefWidth="369.0" styleClass="backpane" stylesheets="@beautify.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Posts">
+   <children>
+      <TextField fx:id="po1" layoutX="25.0" layoutY="73.0" promptText="1." />
+      <TextField fx:id="po2" layoutX="191.0" layoutY="73.0" promptText="2." />
+      <TextField fx:id="po3" layoutX="25.0" layoutY="110.0" promptText="3." />
+      <TextField fx:id="po4" layoutX="191.0" layoutY="110.0" promptText="4." />
+      <Label layoutX="19.0" layoutY="24.0" text="Name of the posts :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="157.0" layoutY="146.0" mnemonicParsing="false" onAction="#save" text="Save" />
+   </children>
+</AnchorPane>

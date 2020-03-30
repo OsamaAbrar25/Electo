@@ -1,0 +1,84 @@
+.button{
+    -fx-background-color: #01FF70;
+    -fx-display:inline;
+    -fx-border: 5px;
+    -fx-text-align:center;
+    -fx-line-height:100px;
+    -fx-font-family: arial;
+    -fx-font-weight: bold;
+    -fx-color:#0082bf;
+    -fx-background-color:#0082bf;
+    -fx-border-radius:0px;
+}
+
+.input{
+    -fx-border:2px;
+    -fx-border-radius: 5px;
+    -fx-outline:none;
+    -fx-padding:8px;
+    -fx-box-sizing:border-box;
+    -fx-margin:8px;
+}
+
+.loginform{
+        -fx-background-color: rgba(105,105,105,0.8);
+    }
+
+
+label{
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+}
+
+.backpane{
+-fx-background-image: url("background.jpg");
+    -fx-background-color: #cccccc;
+}
+.loginformres{
+        -fx-background-color: rgba(105,105,105,0.5);
+        -fx-background-radius:1%;
+        -fx-padding:8px;
+        -fx-margin:8px;
+    }
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+.scroll-pane {
+   -fx-background-color: transparent;
+}
+
+.settings
+{
+-fx-background-image: url("settingsss.png");
+-fx-background-size: cover;
+-fx-background-color: transparent;
+}
+
+.logout
+{
+-fx-background-image: url("exit.png");
+-fx-background-size: cover;
+-fx-background-color: transparent;
+}
+
+.review
+{
+-fx-background-image: url("review.png");
+-fx-background-size: cover;
+-fx-background-color: transparent;
+}
+
+.aboutus
+{
+-fx-background-image: url("aboutuss.png");
+-fx-background-size: cover;
+-fx-background-color: transparent;
+}
+
+.back
+{
+-fx-background-image: url("back.png");
+-fx-background-size: cover;
+-fx-background-color: transparent;
+}

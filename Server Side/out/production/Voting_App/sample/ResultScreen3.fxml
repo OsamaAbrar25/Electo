@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="549.0" prefWidth="774.0" styleClass="backpane" stylesheets="@beautify.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultScreen3">
+    <children>
+        <HBox>
+            <children>
+                <Region prefHeight="70.0" prefWidth="30.0" />
+                <VBox>
+                    <children>
+                        <Region prefHeight="29.0" prefWidth="50.0" />
+                        <Button mnemonicParsing="false" text="Print" />
+                    </children>
+                </VBox>
+                <Region prefHeight="70.0" prefWidth="245.0" HBox.hgrow="ALWAYS" />
+                <Label text="Result">
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
+                </Label>
+                <Region prefHeight="70.0" prefWidth="21.0" />
+                <Region prefHeight="70.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                <VBox prefHeight="70.0" prefWidth="190.0">
+                    <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                        <Label fx:id="category" prefHeight="25.0" prefWidth="223.0" VBox.vgrow="ALWAYS" />
+                        <Label fx:id="post1_label" prefHeight="23.0" prefWidth="190.0" textFill="#514f4f" VBox.vgrow="ALWAYS">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="70.0" prefWidth="90.0">
+                    <children>
+                        <Region prefHeight="26.0" prefWidth="113.0" />
+                  <Button mnemonicParsing="false" onAction="#back" prefHeight="45.0" prefWidth="66.0" styleClass="back" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Region prefHeight="233.0" prefWidth="621.0" />
+        <HBox prefHeight="634.0" prefWidth="774.0" stylesheets="@beautify.css" VBox.vgrow="ALWAYS">
+            <children>
+                <Region prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                <VBox prefHeight="305.0" prefWidth="157.0">
+                    <children>
+                        <Region prefHeight="146.0" prefWidth="83.0" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="Prev_Button" mnemonicParsing="false" onAction="#previous" prefHeight="59.0" prefWidth="72.0" text="Previous" />
+                        <Region prefHeight="147.0" prefWidth="65.0" VBox.vgrow="ALWAYS" />
+                    </children>
+                </VBox>
+                <Region layoutX="612.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                <VBox prefHeight="161.0" prefWidth="507.0" styleClass="loginformres" stylesheets="@beautify.css">
+                    <children>
+                        <HBox prefHeight="82.0" prefWidth="433.0">
+                            <children>
+                                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                <Label prefHeight="50.0" prefWidth="94.0" text="Votes">
+                                    <font>
+                                        <Font name="System Bold Italic" size="27.0" />
+                                    </font>
+                                </Label>
+                                <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                        </HBox>
+                        <Region prefHeight="28.0" prefWidth="487.0" />
+                        <HBox>
+                            <children>
+                                <Label fx:id="p1" prefHeight="44.0" prefWidth="350.0" textFill="#0b2d43">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="p11" opacity="0.0" prefHeight="44.0" prefWidth="138.0">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Region prefHeight="50.0" prefWidth="464.0" />
+                        <HBox>
+                            <children>
+                                <Label fx:id="p2" prefHeight="44.0" prefWidth="350.0" textFill="#0b2d43">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="p22" opacity="0.0" prefHeight="44.0" prefWidth="138.0">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Region layoutX="10.0" layoutY="47.0" prefHeight="50.0" prefWidth="464.0" />
+                        <HBox>
+                            <children>
+                                <Label fx:id="p3" prefHeight="44.0" prefWidth="350.0" textFill="#0b2d43">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                    <opaqueInsets>
+                                        <Insets />
+                                    </opaqueInsets>
+                                </Label>
+                                <Label fx:id="p33" opacity="0.0" prefHeight="44.0" prefWidth="138.0">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Region layoutX="10.0" layoutY="206.0" prefHeight="50.0" prefWidth="464.0" />
+                        <HBox>
+                            <children>
+                                <Label fx:id="p4" prefHeight="44.0" prefWidth="350.0" textFill="#0b2d43">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="p44" opacity="0.0" prefHeight="44.0" prefWidth="138.0">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox>
+                            <children>
+                                <Label fx:id="p5" prefHeight="44.0" prefWidth="350.0" textFill="#0b2d43">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="p55" opacity="0.0" prefHeight="44.0" prefWidth="138.0">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="18.0" layoutY="307.0">
+                            <children>
+                                <Label fx:id="p6" prefHeight="44.0" prefWidth="350.0" textFill="#0b2d43">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="p66" opacity="0.0" prefHeight="44.0" prefWidth="138.0">
+                                    <font>
+                                        <Font name="System Bold" size="34.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </VBox>
+                <Region prefHeight="391.0" prefWidth="2.0" HBox.hgrow="ALWAYS" />
+                <Region prefHeight="367.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+                <VBox prefHeight="458.0" prefWidth="157.0">
+                    <children>
+                        <Region prefHeight="147.0" prefWidth="65.0" VBox.vgrow="ALWAYS" />
+                        <Button fx:id="Next_Button" disable="true" mnemonicParsing="false" onAction="#Next" prefHeight="58.0" prefWidth="65.0" text="Next" />
+                        <Region prefHeight="147.0" prefWidth="65.0" VBox.vgrow="ALWAYS" />
+                    </children>
+                </VBox>
+                <Region layoutX="724.0" layoutY="10.0" prefHeight="391.0" prefWidth="20.0" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+        <Region prefHeight="100.0" prefWidth="774.0" />
+        <HBox>
+            <children>
+                <Region prefHeight="51.0" prefWidth="654.0" />
+                <VBox prefHeight="51.0" prefWidth="119.0">
+                    <children>
+                        <Label text="Electo" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label text="Version.1.0" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label text="Developer: Dujana" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>
